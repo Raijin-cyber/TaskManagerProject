@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center/cover;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+.coin-counter {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 8px 12px;
+    border-radius: 8px;
+}
+
+
+
+.container {
+    background: rgba(59, 58, 58, 0.9);
+    color: #ccc;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+input, button {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #040404;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.task-list {
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    background: rgb(41, 43, 41);
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 10px rgba(36, 243, 9, 0.8);
+    position: relative;
+}
+
+.task button {
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.completed {
+    background: rgb(41, 43, 41) !important;
+    text-decoration: line-through;
+    font-weight: bold;  
+    color: white;
+}
+
+.completed :hover{
+    color: rgb(30, 178, 57);
+}
+
+.points {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.global-timer {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.coin-container {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.coin {
+    display: inline-block;
+    margin: 5px;
+    font-size: 30px;
+}
+
+#music-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: rgba(88, 90, 85, 0.7);
+    color: white;
+    border: none;
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; /* Makes it circular */
+    font-size: 20px;
+    cursor: pointer;
+    transform-style: flat;
+}
+
+#music-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.bg-container {
+    position: fixed; /* Keep it fixed on screen */
+    top: 50%; /* Center it vertically */
+    right: 20px; /* Move it to the right */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    width: 200px; /* Adjust width */
+    height: 500px; /* Limit height for scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Background for better visibility */
+    border-radius: 12px;
+}
+
+/* Individual image items */
+.bg-item img {
+    width: 100%; /* Make all images fit container */
+    height: 120px; /* Ensure uniform height */
+    object-fit: cover; /* Crop images properly */
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.bg-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Style scrollbar */
+.bg-container::-webkit-scrollbar {
+    width: 6px;
+}
+
+.bg-container::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.bg-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+    
+
+
